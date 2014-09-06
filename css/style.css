@@ -48,7 +48,7 @@ img {
 	display: block;
   	position: relative;
   	float: left;
-  	top: 10px;
+  	top: 40px;
 	width: 960px;
 	height: 130px;
 }
@@ -58,17 +58,20 @@ h1 {
   	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	padding: 0;
+	margin: 0;
 }
 
 
 #home-image {
 	display: block;
+	clear: both;
 	position: relative;
 	float: left;
 	width: 960px;
 	height: 275px;
 	background: url(../images/korg_ps3100_front.jpg) center no-repeat;
 	background-size: 50%;
+	margin: 0;
 }
 
 #footer {
@@ -77,7 +80,7 @@ h1 {
 	margin: 0 auto;
 	width: 960px;
 	height: 48px;
-	background-color: rgba(162,165,165,1);
+	background-color: #aaa;
 	top: 732px;
 	border: 4px groove white;
 }
@@ -100,17 +103,16 @@ h1 {
 */
 }
 
-/*#subhead h2 {
+h2 {
 	display: inline-block;
 	position: relative;
-	margin-top: 50px;
   	width: 100%;
-  	height: 37px;
+  	height: 20px;
   	font: .75em 'Agency_FB_Family', Helvetica, sans-serif;
   	text-align: center;
-  	padding-top: 20px;
+	margin-top: 0px; 
 }
-*/
+
 a {
     position: relative;
 	display: inline-block;
@@ -128,8 +130,8 @@ a {
 }
 
 #synths	{
-    top: 14.8%;
-    left: 28.5%;
+    top: 22.9%;
+    left: 29.3%;
 }
 
 #sounds	{
@@ -138,8 +140,8 @@ a {
 }
 
 #video	{
-    top: 40%;
-    left: 67.5%;
+    top: 39.7%;
+    left: 67.3%;
 }
 
 #contact	{
