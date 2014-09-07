@@ -11,7 +11,7 @@ $(function(){
     $.fn.colorCycle = function( options ) {
         
         var settings = $.extend({
-                 colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD'],
+                 colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#99B2B7', '#D9CEB2', '#948C75', '#7A6A53', '#FF6933', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD'],
                  animationStartRange: 100,
                  animationEndRange: 1000,
                  loopStartRange: 1000,
