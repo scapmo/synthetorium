@@ -88,13 +88,32 @@ h1 span {
 	margin: 20px auto 0;
 	width: 465px;	
 	height: 255px;
-	background: url(../images/korg_ps3100_front.jpg) center no-repeat;
+/*	background: url(../images/korg_ps3100_front.jpg) center no-repeat;
 	background-size: 100%;
-	border: 1px solid white;
+*/	border: 1px solid white;
 	border-radius: 10px;
 	box-shadow: 0px 0px 20px white;
 /*	background: aqua;
 */}
+
+#cycler	{
+	position: relative;
+
+}
+
+#cycler img {
+	position:absolute;
+	z-index:1;
+	width: 465px;	
+	height: 255px;
+	border-radius: 10px;
+
+}
+
+#cycler img.active {
+	z-index:3;
+}
+
 
 #footer {
 	display: block;
@@ -127,6 +146,9 @@ h1 span {
 /*	border: 2px solid black;
 */
 }
+
+
+
 
 h2 {
 	display: inline-block;
