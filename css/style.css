@@ -5,6 +5,8 @@
 	src: url('../fonts/AgencyFBRegExt');
 }
 
+/* ////////GLOBAL////////*/
+
 * {	
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -12,111 +14,19 @@
 }
 
 
-/*.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}*/
-
 img {
 	width: 100%;
 }	
+
+/* ////////  GLOBAL  ////////*/
 
 #wallpaper {
 	display: block;
 	position: relative;
 	width: 100%;
 	height: 780px;
-/*	background: url(../images/bluebackground.jpg) no-repeat;
-*/
 	background: rgba(226,226,218,1);
 }
-
-#wrapper {
-	display: block;
-	clear: both;
-	margin: 0 auto;
-	width: 960px;
-	height: 731px;
-	background: url(../images/synthetorium_invert.jpg) center;
-  	background-size: 100%;
-  	box-shadow: 0px 0px 50px #111111;
-
-} 
-
-#header {
-	display: block;
-  	position: relative;
-  	float: left;
-  	top: 40px;
-	width: 960px;
-	height: 130px;
-}
-
-h1 {
-  	font: 3.5em 'HelveticaNeue-UltraLight', sans-serif;
-  	-webkit-font-smoothing: antialiased;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	color: rgba(91,159,180,1);
-	text-shadow: 0px 0px 15px white;
-
-}
-
-h1 span {
-  	font: 1em 'HelveticaNeue-Light', sans-serif;
-  	-webkit-font-smoothing: antialiased;
-	color: rgba(200,200,192,1);
-	font-style: italic;
-
-
-}
-
-#home-image {
-	display: block;
-	clear: both;
-	position: relative;
-	float: left;
-	width: 960px;
-	height: 275px;
-	margin: 0;
-}
-
-#window {
-	position: relative;
-	margin: 20px auto 0;
-	width: 465px;	
-	height: 255px;
-/*	background: url(../images/korg_ps3100_front.jpg) center no-repeat;
-	background-size: 100%;
-*/	border: 1px solid white;
-	border-radius: 10px;
-	box-shadow: 0px 0px 20px white;
-/*	background: aqua;
-*/}
-
-#cycler	{
-	position: relative;
-
-}
-
-#cycler img {
-	position:absolute;
-	z-index:0;
-	width: 465px;	
-	height: 255px;
-	border-radius: 10px;
-
-}
-
-/*#cycler img.active {
-	z-index:3;
-}*/
-
 
 #footer {
 	display: block;
@@ -138,20 +48,45 @@ h1 span {
 	padding: 5px 30px;
 
 }
+/* ////////  HOME  ////////*/
 
-#nav	{
-	width: 100%;
-	height: 50%;
+#home-wrapper {
 	display: block;
-	float: left;
-	top: 400px;
-	left: 0px;
-/*	border: 2px solid black;
-*/
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	height: 731px;
+	background: url(../images/synthetorium_invert.jpg) center;
+  	background-size: 100%;
+  	box-shadow: 0px 0px 50px #111111;
+
+} 
+
+#home-header {
+	display: block;
+  	position: relative;
+  	float: left;
+  	top: 40px;
+	width: 960px;
+	height: 130px;
 }
 
+h1 {
+  	font: 3.5em 'HelveticaNeue-UltraLight', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(91,159,180,1);
+	text-shadow: 0px 0px 15px white;
+}
 
-
+h1 span {
+  	font: 1em 'HelveticaNeue-Light', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+	color: rgba(200,200,192,1);
+	font-style: italic;
+}
 
 h2 {
 	display: inline-block;
@@ -165,10 +100,58 @@ h2 {
 	margin-top: 5px; 
 	color: rgba(37,119,188,1);
 	text-shadow: 0px 0px 30px white;
-
 }
 
-a {
+
+#home-image {
+	display: block;
+	clear: both;
+	position: relative;
+	float: left;
+	width: 960px;
+	height: 275px;
+	margin: 0;
+}
+
+#window {
+	position: relative;
+	margin: 20px auto 0;
+	width: 465px;	
+	height: 255px;
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px white;
+}
+
+#home-nav	{
+	width: 100%;
+	height: 50%;
+	display: block;
+	float: left;
+	top: 400px;
+	left: 0px;
+}
+
+
+/* //////// CROSSFADE FOR HOMEPAGE IMAGES //////// */
+
+#cycler	{ 
+	position: relative;
+}
+
+#cycler img {
+	position:absolute;
+	z-index:0;
+	width: 465px;	
+	height: 255px;
+	border-radius: 10px;
+}
+
+
+
+/* //////// COLORCYCLE //////// */
+
+.colorcycle {
     position: relative;
 	display: inline-block;
     text-align: center;
@@ -180,24 +163,26 @@ a {
     box-shadow: 0px 0px 50px white;
 }
 
-#home	{
+/* HOMEPAGE COLORCYCLE CSS */
+
+#synths	{
     top: 5.4%;
     left: 10.6%;
 }
 
 
-#synths	{
+#sounds	{
     top: 22.9%;
     left: 29.3%;
 }
 
-#sounds	{
+#video	{
     top: 14.8%;
     left: 59%;
 }
 
-#video	{
-    top: 39.7%;
+#resources	{
+    top: 39%;
     left: 67.3%;
 }
 
@@ -209,3 +194,13 @@ a {
 #player1 {
 	visibility: hidden;
 }
+
+/*.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}*/
+

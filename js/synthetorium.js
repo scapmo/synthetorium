@@ -44,7 +44,7 @@ $(function(){
     }
 })(jQuery);
 
-$('a').colorCycle();
+$('a.colorcycle').colorCycle();
 
 
 	var player = $('#player1')[0];
