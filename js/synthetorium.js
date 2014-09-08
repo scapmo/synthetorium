@@ -12,8 +12,8 @@ $(function(){
         
         var settings = $.extend({
                  colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#99B2B7', '#D9CEB2', '#948C75', '#7A6A53', '#FF6933', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD'],
-                 animationStartRange: 100,
-                 animationEndRange: 1000,
+                 animationStartRange: 1000,
+                 animationEndRange: 4000,
                  loopStartRange: 1000,
                  loopEndRange: 4000
             }, options),
@@ -61,7 +61,7 @@ $('a').colorCycle();
 	});
 
 $(function(){
-  rotatePics(4);
+  rotatePics(5);
  
   function rotatePics(currentPhoto){
     var numberOfPhotos = $('#cycler img').length;
