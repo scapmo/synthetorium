@@ -63,10 +63,13 @@ h1 {
 	padding: 0;
 	margin: 0;
 	color: rgba(91,159,180,1);
+	text-shadow: 0px 0px 15px white;
+
 }
 
 h1 span {
   	font: 1em 'HelveticaNeue-Light', sans-serif;
+  	-webkit-font-smoothing: antialiased;
 	color: rgba(200,200,192,1);
 	font-style: italic;
 
@@ -103,16 +106,16 @@ h1 span {
 
 #cycler img {
 	position:absolute;
-	z-index:1;
+	z-index:0;
 	width: 465px;	
 	height: 255px;
 	border-radius: 10px;
 
 }
 
-#cycler img.active {
+/*#cycler img.active {
 	z-index:3;
-}
+}*/
 
 
 #footer {
@@ -129,8 +132,8 @@ h1 span {
 }
 
 #footer p {
-	font: .75em Arial, Helvetica, sans-serif;
-	color: white;
+	font: .8em Arial, Helvetica, sans-serif;
+	color: rgba(219,220,209,1);
 	text-align: right;
 	padding: 5px 30px;
 
@@ -157,8 +160,8 @@ h2 {
   	height: 20px;
   	font: .9em 'Roboto', Helvetica, sans-serif;
   	font-weight: 700;
-/*  	font-style: italic;
-*/  	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
 	margin-top: 5px; 
 	color: rgba(37,119,188,1);
 	text-shadow: 0px 0px 30px white;

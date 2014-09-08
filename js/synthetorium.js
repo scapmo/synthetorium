@@ -60,17 +60,28 @@ $('a').colorCycle();
 		player.load();
 	});
 
-function cycleImages(){
-      var $active = $('#cycler .active');
-      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
-      $next.css('z-index',2);//move the next image up the pile
-      $active.fadeOut(4000,function(){//fade out the top image
-	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-          $next.css('z-index',3).addClass('active');//make the next image the top one
+$(function(){
+  rotatePics(4);
+ 
+  function rotatePics(currentPhoto){
+    var numberOfPhotos = $('#cycler img').length;
+    currentPhoto = currentPhoto % numberOfPhotos;
+ 
+    $('#cycler img').eq(currentPhoto).fadeOut(function(){
+      // Re-order the z-index
+      $('#cycler img').each(function(i){
+        $(this).css(
+          'zIndex', ((numberOfPhotos - i ) + currentPhoto) % numberOfPhotos
+        );
       });
-    }
-
-setInterval(cycleImages(), 7000);
-
-
+ 
+    $(this).show();
+ 
+    setTimeout(function() {
+      rotatePics(++currentPhoto);
+    },4000);
+ 
+    });
+  }
+});
 });
