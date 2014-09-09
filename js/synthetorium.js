@@ -87,7 +87,7 @@ $(function(){
 
 $( "#synths" ).hover(
   function() {
-    $( this ).append( $("<span>M</span>") );
+    $( this ).append( $('<img src="../images/keyboard_icon.jpg">') );
   }, function() {
     $( this ).find( "span:last" ).remove();
   }
