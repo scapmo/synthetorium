@@ -84,4 +84,45 @@ $(function(){
     });
   }
 });
+
+$( "#synths" ).hover(
+  function() {
+    $( this ).append( $("<span>M</span>") );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
+$( "#sounds" ).hover(
+  function() {
+    $( this ).append( $("<span>m</span>") );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
+$( "#video" ).hover(
+  function() {
+    $( this ).append( $("<span>V</span>") );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
+$( "#resources" ).hover(
+  function() {
+    $( this ).append( $("<span>Q</span>") );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
+$( "#contact" ).hover(
+  function() {
+    $( this ).append( $("<span>E</span>") );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
 });

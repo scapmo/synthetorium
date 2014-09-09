@@ -3,6 +3,8 @@
 	src: url('../fonts/HelveticaNeue.dfont');
 	font-family: 'Agency_FB_Family';
 	src: url('../fonts/AgencyFBRegExt');
+	font-family: 'Heydings';
+	src: url('../fonts/heydings_icons.ttf');
 }
 
 /* ////////GLOBAL////////*/
@@ -18,15 +20,14 @@ img {
 	width: 100%;
 }	
 
-/* ////////  GLOBAL  ////////*/
 
-#wallpaper {
-	display: block;
-	position: relative;
-	width: 100%;
-	height: 780px;
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	background: rgba(226,226,218,1);
 }
+
 
 #header {
 	display: block;
@@ -36,6 +37,42 @@ img {
 	width: 960px;
 	height: 130px;
 }
+
+
+#footer {
+	position: absolute;
+	margin: 0 auto;
+	width: 960px;
+	height: 48px;
+	background-color: rgba(115,115,115,1);
+	bottom: 0;
+	box-shadow: 0px 0px 50px #111111;
+	border-top: 1px solid #eee;
+}
+
+
+#footer p {
+	font: .8em Arial, Helvetica, sans-serif;
+	color: rgba(219,220,209,1);
+	text-align: right;
+	padding: 5px 30px;
+}
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+
+a 	{
+	text-decoration: none;
+}
+
 
 h1 {
   	font: 3.5em 'HelveticaNeue-UltraLight', sans-serif;
@@ -76,42 +113,15 @@ h3 	{
 	margin: 0;
 	color: rgba(91,159,180,1);
 	padding-top: 10px;
-/*	text-shadow: 0px 0px 15px white;
-*/}
-
-#footer {
-	display: block;
-	position: absolute;
-	margin: 0 auto;
-	width: 960px;
-	height: 48px;
-	background-color: rgba(115,115,115,1);
-	top: 732px;
-	box-shadow: 0px 0px 50px #111111;
-	border-top: 1px solid #eee;
 }
 
-#footer p {
-	font: .8em Arial, Helvetica, sans-serif;
-	color: rgba(219,220,209,1);
-	text-align: right;
-	padding: 5px 30px;
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
 
 /* ////////  HOME  ////////*/
 
-#home-wrapper {
-	display: block;
-	clear: both;
+.home-wrapper {
+	position: relative; 
+/*	display: block;
+	clear: both;*/
 	margin: 0 auto;
 	width: 960px;
 	height: 731px;
@@ -123,18 +133,18 @@ h3 	{
 
 
 #home-image {
-	display: block;
-	clear: both;
-	position: relative;
-	float: left;
+/*	display: block;
+	clear: both;*/
+/*	position: relative;
+*/	float: left;
 	width: 960px;
 	height: 275px;
 	margin: 0;
 }
 
 #window {
-	position: relative;
-	margin: 20px auto 0;
+/*	position: relative;
+*/	margin: 20px auto 0;
 	width: 465px;	
 	height: 255px;
 	border: 1px solid white;
@@ -149,14 +159,25 @@ h3 	{
 	float: left;
 	top: 400px;
 	left: 0px;
+	padding-bottom: 48px;
+}
+
+#home-nav span {
+	font: 3em Heydings;
+  	-webkit-font-smoothing: antialiased;
+/*  	vertical-align: center;
+*/	/*	color: rgba(200,200,192,1); /*white*/
+	/*	color: rgba(91,159,180,1); /*blue*/
+	color: rgba(253,120,8,1); /*orange*/	
+	text-decoration: none;
 }
 
 
 /* //////// CROSSFADE FOR HOMEPAGE IMAGES //////// */
 
 #cycler	{ 
-	position: relative;
-}
+/*	position: relative;
+*/}
 
 #cycler img {
 	position:absolute;
@@ -191,17 +212,17 @@ h3 	{
 
 
 #sounds	{
-    top: 22.9%;
+    top: 26.3%;
     left: 29.3%;
 }
 
 #video	{
-    top: 14.8%;
-    left: 59%;
+    top: 15.3%;
+    left: 58.8%;
 }
 
 #resources	{
-    top: 39%;
+    top: 45%;
     left: 67.3%;
 }
 
@@ -224,8 +245,8 @@ h3 	{
 	clear: both;
 	margin: 0 auto;
 	width: 960px;
-	height: 909px;
-	background: url(../images/plain_box_960-909.jpg) center;
+	height: 960px;
+	background: url(../images/plain_box_960-960.jpg) center;
   	background-size: 100%;
   	box-shadow: 0px 0px 50px #111111;
 } 
@@ -235,7 +256,7 @@ h3 	{
 	clear: both;
 	position: relative;
 	width: 880px;
-	height: 360px;
+	height: 380px;
 	margin: 0 auto;
 	padding-top: 30px;
 }
@@ -244,7 +265,7 @@ h3 	{
   	display: inline-block;
 	float: left;
 	width: 168px;
-	height: 360px;
+	height: 380px;
 	margin-left: 10px;
 	border-left: 1px solid white;
   	padding-left: 10px;
@@ -257,27 +278,21 @@ h3 	{
 .col-first {
   	display: inline-block;
 	float: left;
-	width: 168px;
-	height: 360px;
+	width: 158px;
+	height: 380px;
 	background-color: rgba(64,64,64,.2);
   	font: 1em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
   	color: rgba(229,231,230,1);
  }
 
-p span 	{
-	font: .8em 'HelveticaNeue-Light', sans-serif;
+span a	{
+	font: 1em Heydings;
   	-webkit-font-smoothing: antialiased;
-	color: rgba(200,200,192,1);
-	font-style: italic;
-	color: rgba(91,159,180,1);
-	text-align: right;
+/*	color: rgba(200,200,192,1); /*white*/
+/*	color: rgba(91,159,180,1); /*blue*/
+	color: rgba(253,120,8,1); /*orange*/	
+	text-align: left;
+	text-decoration: none;
 }
 
-p .colorcycle {
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color: #ccc;
-    padding-left: 5px;
-}
