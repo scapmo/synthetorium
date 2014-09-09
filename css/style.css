@@ -28,41 +28,7 @@ img {
 	background: rgba(226,226,218,1);
 }
 
-#footer {
-	display: block;
-	position: absolute;
-	margin: 0 auto;
-	width: 960px;
-	height: 48px;
-	background-color: rgba(115,115,115,1);
-	top: 732px;
-	box-shadow: 0px 0px 50px #111111;
-	border-top: 1px solid #eee;
-
-}
-
-#footer p {
-	font: .8em Arial, Helvetica, sans-serif;
-	color: rgba(219,220,209,1);
-	text-align: right;
-	padding: 5px 30px;
-
-}
-/* ////////  HOME  ////////*/
-
-#home-wrapper {
-	display: block;
-	clear: both;
-	margin: 0 auto;
-	width: 960px;
-	height: 731px;
-	background: url(../images/synthetorium_invert.jpg) center;
-  	background-size: 100%;
-  	box-shadow: 0px 0px 50px #111111;
-
-} 
-
-#home-header {
+#header {
 	display: block;
   	position: relative;
   	float: left;
@@ -101,6 +67,59 @@ h2 {
 	color: rgba(37,119,188,1);
 	text-shadow: 0px 0px 30px white;
 }
+
+h3 	{
+	font: 1em 'HelveticaNeue-Bold', sans-serif-bold;
+  	-webkit-font-smoothing: antialiased;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	color: rgba(91,159,180,1);
+	padding-top: 10px;
+/*	text-shadow: 0px 0px 15px white;
+*/}
+
+#footer {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	width: 960px;
+	height: 48px;
+	background-color: rgba(115,115,115,1);
+	top: 732px;
+	box-shadow: 0px 0px 50px #111111;
+	border-top: 1px solid #eee;
+}
+
+#footer p {
+	font: .8em Arial, Helvetica, sans-serif;
+	color: rgba(219,220,209,1);
+	text-align: right;
+	padding: 5px 30px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+/* ////////  HOME  ////////*/
+
+#home-wrapper {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	height: 731px;
+	background: url(../images/synthetorium_invert.jpg) center;
+  	background-size: 100%;
+  	box-shadow: 0px 0px 50px #111111;
+
+} 
 
 
 #home-image {
@@ -195,12 +214,70 @@ h2 {
 	visibility: hidden;
 }
 
-/*.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}*/
 
+
+
+/* //////// SYNTH PAGE //////// */
+
+#synth-wrapper {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	height: 909px;
+	background: url(../images/plain_box_960-909.jpg) center;
+  	background-size: 100%;
+  	box-shadow: 0px 0px 50px #111111;
+} 
+
+.col-wrapper {
+	display: block;
+	clear: both;
+	position: relative;
+	width: 880px;
+	height: 360px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.col	{
+  	display: inline-block;
+	float: left;
+	width: 168px;
+	height: 360px;
+	margin-left: 10px;
+	border-left: 1px solid white;
+  	padding-left: 10px;
+	background-color: rgba(64,64,64,.2);
+  	font: 1em 'HelveticaNeue-Light', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+  	color: rgba(229,231,230,1);
+}
+
+.col-first {
+  	display: inline-block;
+	float: left;
+	width: 168px;
+	height: 360px;
+	background-color: rgba(64,64,64,.2);
+  	font: 1em 'HelveticaNeue-Light', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+  	color: rgba(229,231,230,1);
+ }
+
+p span 	{
+	font: .8em 'HelveticaNeue-Light', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+	color: rgba(200,200,192,1);
+	font-style: italic;
+	color: rgba(91,159,180,1);
+	text-align: right;
+}
+
+p .colorcycle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #ccc;
+    padding-left: 5px;
+}
