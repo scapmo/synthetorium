@@ -220,7 +220,7 @@ h3 	{
 }
 
 #resources	{
-    top: 45%;
+    top: 44%;
     left: 67.3%;
 }
 
@@ -283,13 +283,7 @@ h3 	{
   	color: rgba(229,231,230,1);
  }
 
-span a	{
-	font: 1em Heydings;
-  	-webkit-font-smoothing: antialiased;
-/*	color: rgba(200,200,192,1); /*white*/
-/*	color: rgba(91,159,180,1); /*blue*/
-	color: rgba(253,120,8,1); /*orange*/	
-	text-align: left;
-	text-decoration: none;
+a.colorcycle img {
+	display: none;
 }
 
