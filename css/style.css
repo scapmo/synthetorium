@@ -223,7 +223,7 @@ a.colorcycle {
     vertical-align: middle;
     width: 25px;
     height: 25px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #ccc;
     box-shadow: 0px 0px 50px white;
 }
@@ -247,10 +247,25 @@ a.colorcycle img {
     left: 10.6%;
 }
 
+#synthsbox	{
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
+}
 
 #sounds	{
     top: 26.3%;
     left: 29.3%;
+}
+
+#soundsbox	{
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
 }
 
 #video	{
@@ -258,9 +273,25 @@ a.colorcycle img {
     left: 58.8%;
 }
 
+#videobox	{
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
+}
+
 #resources	{
     top: 44%;
     left: 67.3%;
+}
+
+#resourcesbox	{
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
 }
 
 #contact	{
@@ -268,6 +299,13 @@ a.colorcycle img {
     left: 74.2%;
 }
 
+#contactbox	{
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
+}
 /*#player1, #player2, #player3, #player4, #player5, #player6 {
 /*	visibility: hidden;
 */
