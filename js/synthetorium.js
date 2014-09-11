@@ -5,7 +5,15 @@ $(function(){
 
 
 $('a.colorcycle').colorCycle({
-      colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#99B2B7', '#D9CEB2', '#948C75', '#7A6A53', '#FF6933', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD']
+      colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#99B2B7', '#D9CEB2', '#948C75', '#7A6A53', '#FF6933', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD'],
+
+  // starting and end range for animation time in milliseconds.
+      animationStartRange: 500,
+      animationEndRange: 2000,
+
+  // starting and end range for loop time in milliseconds.
+      loopStartRange: 500,
+      loopEndRange: 2000
 
 });
 
