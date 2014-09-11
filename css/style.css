@@ -378,12 +378,14 @@ audio {
 	float: right;
 	border: 1px solid black;
 	border-radius: 5px;
+	height: 1.7em;
 
 }
 .col-wrapper span a {
-	font: .8em 'HelveticaNeue-Bold', sans-serif;
 	padding-left: 5px;
 	padding-right: 5px;
+	font: .8em 'HelveticaNeue-Bold', sans-serif;
+	vertical-align: center;
   	color: rgba(229,231,230,1);
 }
 
