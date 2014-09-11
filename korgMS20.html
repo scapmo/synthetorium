@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>THE SYNTHETORIUM</title>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!-- <link rel="stylesheet"	type="text/css" href="css/responsive.css"> -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id="synth-wrapper">
+		<a href="index.html">
+			<div id="header">
+				<h1>THE <span>SYNTH</span>ETORIUM</h1>	
+				<h2>Synthesizers from the golden age of analog</h2>
+			</div>
+		</a>
+	
+		<div class="model-wrapper">
+
+			<div class="three-col-left">
+				<h3>KORG MS-20</h3>
+				    <table>
+  						<tr>
+					        <td><span>FORMAT:</span> 2-VCO Semi-Modular Monosynth</td>
+					    </tr>
+					    
+					    <tr>
+					        <td><span>MANUFACTURED:</span> 1978-1983</td>
+					    </tr>
+					    
+					    <tr>
+					        <td><span>NUMBER PRODUCED:</span> approx. 10,000</td>
+					    </tr>
+					</table>
+
+				<p>The Korg MS-20 is a patchable semi-modular monophonic synthesizer which Korg released in 1978 and which was in production until 1983. It was part of Korg's MS series of instruments, which also included the single oscillator MS-10, the keyboardless MS-50 module, the SQ-10 sequencer, and the VC-10 Vocoder.</p>
+
+				<h4>OSCILLATORS</h4>
+				<p>The MS-20 has two VCOs. The output of VCO1 can be set to triangle, sawtooth, adjustable-width pulse or white noise. The output of VCO2 can be set to sawtooth, square, rectangle or "ring mod" which is in fact an exclusive-OR between the pulse output of VCO1 and the square wave output of VCO2. Although the pulse width of VCO1 is adjustable, there is no voltage control for this parameter and as a result pulse width modulation is not possible without modifying the circuit.</p>
+
+				<h4>FILTERS</h4>
+				<p>There are two VCFs in series. The first is a 6 dB/oct high-pass, the second a 12 dB/oct low-pass. Resonance ("peak" in Korg parlance) is adjustable but not voltage-controlled.</p>
+
+				<h4>MODULATION GENERATOR</h4>
+				<p>The MS-20 has a low frequency oscillator, labelled "modulation generator". It has two controls (rate and shape) and two outputs (pulse and sloped).</p>
+
+			</div><!--end three-col-right div-->
+
+			<div class="three-col-right">
+
+				<div id="synth-page-image">
+					<img src="images/korg_MS20.jpg" alt="Korg MS-20">
+				</div>
+
+			<div id="synth-page-audio">
+				<h3>AUDIO</h3>
+
+				<h5>Ambient Sequence</h5>
+				<audio controls id="player1">
+					<source src="music/MS20-ambient-sequence.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-ambient-sequence.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+
+				<h5>Percussive Sequence</h5>
+				<audio controls id="player2">
+					<source src="music/MS20-sequence.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-sequence.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+				
+				<h5>VCO Sync</h5>				
+				<audio controls id="player3">
+					<source src="music/MS20-VCO-sync.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-VCO-sync.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+
+				<h5>Pulse Width Modulation</h5>
+				<audio controls id="player4">
+					<source src="music/MS20-PWM.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-PWM.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+
+				<h5>MS20 Jam (all sounds from MS20)</h5>
+				<audio controls id="player5">
+					<source src="music/MS20-jam.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-jam.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+
+				<h5>MS20 Theme (all sounds from MS20)</h5>
+				<audio controls id="player6">
+					<source src="music/MS20-theme.mp3" type="audio/mpeg"></source>
+					<source src="music/MS20-theme.ogg" type="audio/ogg"></source>
+					Your browser does not support the audio element. Upgrade <a href="http://browsehappy.com">here</a>. 
+				</audio>
+
+			</div>
+
+			</div> <!--end three-col-right div-->
+		
+		</div> <!--end synth-wrapper div -->			
+
+
+
+		<div id="footer">
+			<a href="mailto:scapelliti@gmail.com"><p>© christopher scapelliti</p></a>
+		</div>
+	</div> <!--wrapper div end tag-->
+  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="js/jquery.colorcycle.min.js"></script>
+  <script src="js/synthetorium.js"></script>
+
+</body>
+</html>

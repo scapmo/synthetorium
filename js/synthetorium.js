@@ -3,10 +3,6 @@ $(function(){
 
 	/* Color Cycle - jQuery Plugin - v0.1.0 - created by: hello@jonathangrover.com */
 
-	// $('a').colorCycle();
-
-/* Color Cycle - jQuery Plugin - v0.1.0 - created by: hello@jonathangrover.com */
-
 
 $('a.colorcycle').colorCycle({
       colors: ['#D3E2B6', '#C3DBB4', '#AACCB1', '#87BDB1', '#68B3AF', '#5B9FB4', '#99B2B7', '#D9CEB2', '#948C75', '#7A6A53', '#FF6933', '#63AABC', '#84BBD0', '#B0DEED', '#BEE1DD']
@@ -28,7 +24,7 @@ $('a.colorcycle').colorCycle({
 	});
 
 $(function(){
-  rotatePics(5);
+  rotatePics(7);
  
   function rotatePics(currentPhoto){
     var numberOfPhotos = $('#cycler img').length;
@@ -57,9 +53,8 @@ $( ".colorcycle" ).hover(
     $( this ).find("img").show();
   }, function() {
     $( this ).find("img").hide();
-  }
-);
-
+  
+});
 
 
 });
