@@ -230,7 +230,7 @@ a.colorcycle {
 
 a.colorcycle img {
 	display: none;
-	width: 110%;
+	width: 105%;
 	border: 1px solid #aaa;
 	border-radius: 50%;
 	box-shadow: 0px 0px 50px white;
@@ -312,7 +312,7 @@ a.colorcycle img {
 
 
 audio {
-	padding-left: 20px;
+	padding-left: 5px;
 	padding-top: 40px;
 	width: 100%;
 }
@@ -349,8 +349,8 @@ audio {
 	margin-left: 10px;
 	border-left: 1px solid white;
   	padding-left: 10px;
-	background-color: rgba(64,64,64,.2);
-  	font: 1em 'HelveticaNeue-Light', sans-serif;
+/*	background-color: rgba(64,64,64,.2);
+*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
   	color: rgba(229,231,230,1);
 }
@@ -360,8 +360,8 @@ audio {
 	float: left;
 	width: 158px;
 	height: 380px;
-	background-color: rgba(64,64,64,.2);
-  	font: 1em 'HelveticaNeue-Light', sans-serif;
+/*	background-color: rgba(64,64,64,.2);
+*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
   	color: rgba(229,231,230,1);
  }
@@ -396,8 +396,8 @@ audio {
 	height: 800px;
 	padding-left: 10px;
 	padding-right: 20px;
-	background-color: rgba(64,64,64,.2);
-  	font: 1em 'HelveticaNeue-Light', sans-serif;
+/*	background-color: rgba(64,64,64,.2);
+*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
   	color: rgba(229,231,230,1);
  }
@@ -407,9 +407,10 @@ audio {
 	float: left;
 	width: 430px;
 	height: 800px;
+	padding-top: 10px;
 	padding-left: 20px;	
-	background-color: rgba(64,64,64,.2);
-  	font: 1em 'HelveticaNeue-Light', sans-serif;
+/*	background-color: rgba(64,64,64,.2);
+*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
   	color: rgba(229,231,230,1);
  }
