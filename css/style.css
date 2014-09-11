@@ -350,8 +350,9 @@ audio {
 	border-left: 1px solid white;
   	padding-left: 10px;
 /*	background-color: rgba(64,64,64,.2);
-*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
+*/  	font: .9em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
+  	line-height: 1.4em;
   	color: rgba(229,231,230,1);
 }
 
@@ -361,8 +362,9 @@ audio {
 	width: 158px;
 	height: 380px;
 /*	background-color: rgba(64,64,64,.2);
-*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
+*/  	font: .9em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
+  	line-height: 1.4em;
   	color: rgba(229,231,230,1);
  }
 
@@ -371,9 +373,18 @@ audio {
 	border-radius: 7px;
 }
 
+.col-wrapper span {
+	background: rgba(255,81,29,.8);
+	float: right;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
 .col-wrapper span a {
-	font: .8em Heydings;
-	color: rgba(255,81,29,1);
+	font: .8em 'HelveticaNeue-Bold', sans-serif;
+	padding-left: 5px;
+	padding-right: 5px;
+  	color: rgba(229,231,230,1);
 }
 
 
@@ -397,8 +408,9 @@ audio {
 	padding-left: 10px;
 	padding-right: 20px;
 /*	background-color: rgba(64,64,64,.2);
-*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
+*/  	font: .9em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
+  	line-height: 1.5em;
   	color: rgba(229,231,230,1);
  }
 
@@ -410,8 +422,9 @@ audio {
 	padding-top: 10px;
 	padding-left: 20px;	
 /*	background-color: rgba(64,64,64,.2);
-*/  	font: 1em 'HelveticaNeue-Light', sans-serif;
+*/  	font: .9em 'HelveticaNeue-Light', sans-serif;
   	-webkit-font-smoothing: antialiased;
+  	line-height: 1.5em;
   	color: rgba(229,231,230,1);
  }
 
